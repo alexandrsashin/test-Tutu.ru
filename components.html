@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/components-style.css">
+	<title>Frontend-html-test</title>
+</head>
+<body>
+<svg style="display:none">
+	<symbol viewBox="0 0 51 48" id="icon-star">
+		<path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+	</symbol>
+</svg>
+	<div class="components-wrapper">
+		<h1 class="components-title">Верстка компонентов</h1>
+		<form class="components-item">
+			<fieldset class="components-field">
+				<legend class="components-name">Компонент оценки и показа рейтинга</legend>
+				<input class="star__input" type="radio" name="rating" value="1" id="1star">
+				<label class="star__label" for="1star">
+					<svg class="main-nav__toggle" width="25.5" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg>
+				</label>
+				<input class="star__input" type="radio" name="rating" value="2" id="2stars">
+				<label class="star__label" for="2stars">
+					<svg class="main-nav__toggle" width="25.5" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg>
+				</label>
+				<input class="star__input" type="radio" name="rating" value="3" id="3stars">
+				<label class="star__label" for="3stars">
+					<svg class="main-nav__toggle" width="25.5" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg>
+				</label>
+				<input class="star__input" type="radio" name="rating" value="4" id="4stars">
+				<label class="star__label" for="4stars">
+					<svg class="main-nav__toggle" width="25.5" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg>
+				</label>
+				<input class="star__input" type="radio" name="rating" value="5" id="5stars" checked>
+				<label class="star__label" for="5stars">
+					<svg class="main-nav__toggle" width="25.5" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use></svg>
+				</label>
+			</fieldset>
+		</form>
+		<div class="components-item">
+			<h2 class="components-name">Прогресс-бар</h2>
+			<div class="progress-bar">
+				<div class="progress-bar__intro"></div>
+				<div class="progress-bar__percentage">0%</div>
+			</div>
+			<button class="progress-bar__run" onclick="move()">Run</button>
+		</div>
+		<div class="components-item">
+			<h2 class="components-name">Кнопки</h2>
+			<form class="form"  method="post" action="https://echo.htmlacademy.ru">
+				<p class="components__text">Реализация кнопки с помощью input[type="submit"] на примере формы с радио-баттонами.</p>
+				<div class="form__field">
+					<input class="form__input  form__input--radio" type="radio" id="first" name="choice" value="first variant">
+					<label class="form__label  form__label--radio" for="first">Первый вариант</label>
+					<input class="form__input  form__input--radio" type="radio" id="second" name="choice" value="second variant">
+					<label class="form__label  form__label--radio" for="second">Второй вариант</label>
+					<input class="btn  small" type="submit" value="Send">
+				</div>	
+			</form>
+			<div class="nav">
+				<p class="components__text">Реализация кнопок с помощью тега &lt;a&gt; в панели навигации.</p>
+				<a class="nav__link btn small" href="#">Sign in</a>
+				<a class="nav__link btn small" href="#">Sign up</a>
+			</div>
+			<div class="articles">
+				<p class="components__text">Реализация кнопок с помощью тега &lt;div&gt; в списке статей.</p>
+				<div class="articles__item">
+					<a class="articles__link" href="#">Сервером называется компьютер, выделенный из группы персональных компьютеров (или рабочих станций) для выполнения какой-либо сервисной задачи без непосредственного участия человека. Сервер и рабочая станция могут иметь одинаковую аппаратную конфигурацию, так как различаются лишь по участию в своей работе человека за консолью.</a>
+				</div>
+				<div class="articles__item">
+					<a class="articles__link" href="#">Как правило компьютеры и программы, входящие в состав информационной системы, не являются равноправными. Некоторые из них владеют ресурсами (файловая система, процессор, принтер, база данных и т.д.), другие имеют возможность обращаться к этим ресурсам. Компьютер (или программу), управляющий ресурсом, называют сервером этого ресурса (файл-сервер, сервер базы данных, вычислительный сервер...). Клиент и сервер какого-либо ресурса могут находится как на одном компьютере, так и на различных компьютерах, связанных сетью.</a>
+				</div>
+				<div class="articles__item btn small">
+					<a href="#" class="articles__link">
+						Кнопка
+					</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>>
+</body>
+</html>

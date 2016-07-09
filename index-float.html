@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/style-float.css">
+	<title>Frontend-html-test</title>
+</head>
+<body>
+<div class="site-wrapper">
+	<header class="page-header">
+		<nav class="main-navigation">
+			<ul class="main-navigation__list">
+				<li class="main-navigation__item"><a href="index.html">Личный кабинет</a></li>
+				<li class="main-navigation__item"><a href="#">Раздел 1</a></li>
+				<li class="main-navigation__item"><a href="#">Раздел 2</a></li>
+				<li class="main-navigation__item"><a href="#">Раздел 3</a></li>
+				<li class="main-navigation__item"><a href="#">Раздел 4</a></li>
+				<li class="main-navigation__item"><a href="#">Раздел 5</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="page-content clearfix">
+		<form class="form" action="https://echo.htmlacademy.ru" method="post">
+			<div class="form__progress-item clearfix">
+				<h2 class="form__progress-title">Заполните форму</h2>
+				<ul class="form__progress-list">
+					<li class="form__progress-stage  form__progress-stage--passed">1</li>
+					<li class="form__progress-stage  form__progress-stage--passed">2</li>
+					<li class="form__progress-stage  form__progress-stage--current">3</li>
+					<li class="form__progress-stage">4</li>
+					<li class="form__progress-stage">5</li>
+				</ul>
+			</div>
+			<fieldset class="form__item">
+				<legend class="form__item-title">
+					Общая информация
+				</legend>
+				<div class="clearfix">
+					<div class="form__field">
+						<label for="surname" class="form__label">
+							Фамилия
+						</label>
+						<input class="form__input" type="text" id="surname" name="surname">
+					</div>
+					<div class="form__field">
+						<label for="name" class="form__label">
+							Имя
+						</label>
+						<input class="form__input" type="text" id="name" name="name">
+					</div>
+					<div class="form__field">
+						<label for="patronymic" class="form__label">
+							Отчество
+						</label>
+						<input class="form__input" type="text" id="patronymic" name="patronymic">
+					</div>
+					<div class="form__field">
+						<p class="form__label">
+							Меняли фамилию?
+						</p>
+						<input class="form__input  form__input--radio" type="radio" name="family-change" value="yes" id="yes" checked>
+						<label for="yes" class="form__label  form__label--radio">
+							Да
+						</label>
+						<input class="form__input  form__input--radio" type="radio" name="family-change" value="no" id="no" checked>
+						<label for="no" class="form__label  form__label--radio">
+							Нет
+						</label>
+					</div>
+					<div class="form__field">
+						<p class="form__label">
+							Пол
+						</p>
+						<input class="form__input  form__input--radio" type="radio" name="sex" value="male" id="male" checked>
+						<label for="male" class="form__label  form__label--radio">
+							Муж
+						</label>
+						<input class="form__input  form__input--radio" type="radio" name="sex" value="female" id="female">
+						<label for="female" class="form__label  form__label--radio">
+							Жен
+						</label>
+					</div>
+					<div class="form__field">
+						<label for="family-status" class="form__label">
+							Семейное положение
+						</label>
+						<select class="form__select" name="family-status" id="family-status">
+						  <option value="married" selected>Женат / Замужем</option>
+						  <option value="not married">Не женат / не замужем</option>
+						  <option value="divorced">В разводе</option>
+						</select>
+					</div>
+					<div class="form__field">
+						<label for="citizenship" class="form__label">
+							Гражданство
+						</label>
+						<select class="form__select" name="citizenship" id="citizenship">
+							<option value="Russian Federation" selected>Российская Федерация</option>
+							<option value="Ukraine">Украина</option>
+							<option value="Republic of Belarus">Республика Беларусь</option>
+						</select>
+					</div>
+					<div class="form__field">
+						<label for="birthday" class="form__label">
+							Дата рождения
+						</label>
+						<div class="form__input-wrapper">
+						<select class="form__select  form__select--small" name="date of birth" id="birthday">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11" selected>11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select>
+						<select class="form__select  form__select--small" name="month of birth">
+							<option value="January">Январь</option>
+							<option value="February">Февраль</option>
+							<option value="March">Март</option>
+							<option value="April">Апрель</option>
+							<option value="May">Май</option>
+							<option value="June" selected>Июнь</option>
+							<option value="July">Июль</option>
+							<option value="August">Август</option>
+							<option value="September">Сентябрь</option>
+							<option value="October">Октябрь</option>
+							<option value="November">Ноябрь</option>
+							<option value="December">Декабрь</option>
+						</select>
+						<select class="form__select  form__select--small" name="year of birth">
+							<option value="1970" selected>1970</option>
+							<option value="1971">1971</option>
+							<option value="1972">1972</option>
+						</select>
+						</div>
+					</div>
+					<div class="form__field  form__field--birthplace">
+						<label for="birthplace" class="form__label">
+							Место рождения
+						</label>
+						<input class="form__input" type="text" id="birthplace" name="birthplace">
+						<span class="form__field-comment">Например, Россия, Комсомольск-на-Амуре</span>
+					</div>
+				</div>
+			</fieldset>
+			<div class="page-transition clearfix">
+				<button class="page-transition__button  btn-back" disabled>
+					&#8592; Назад
+				</button>
+				<button class="page-transition__button  btn-forward" type="submit">
+					Далее &#8594;
+				</button>
+			</div>
+		</form>
+		<div class="company-description">
+			<p class="company-description__text">TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</p>
+			<p class="company-description__text">Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми. Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц.<br>А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собственному контакт-центру.</p>	
+		</div>
+		</div>
+	</main>
+</div>
+</body>
+</html>
